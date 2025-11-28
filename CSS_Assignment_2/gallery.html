@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>My Photo Gallery- Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <h1 id="main-title" class="title">My Photo Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Open Nature & Hidden Corners</h2>
+        <div class="gallery">
+
+            <figure class="artwork relative"> <!--relative positioned figure-->
+                <img src="images/photo1.jpg" alt="Sinis" class="art-img">
+                <figcaption class="figcaption absolute">Sinis Peninsula, Sardinia, Italy</figcaption>
+            </figure>
+
+            <figure class="artwork static"> <!--static positioned figure-->
+                <img src="images/photo2.jpg" alt="Lake view" class="art-img">
+                <figcaption class="figcaption static">Kotka, Finland</figcaption>
+            </figure>
+
+            <figure class="artwork absolute"> <!--absolute positioned figure-->
+                <img src="images/photo3.JPG" alt="Sunset" class="art-img">
+                <figcaption class="figcaption absolute">Nebida, Sardinia, Italy</figcaption>
+            </figure>
+
+            <figure class="artwork sticky"> <!--sticky positioned figure-->
+                <img src="images/photo4.jpg" alt="Colorful house" class="art-img">
+                <figcaption class="figcaption sticky">Bosa, Sardinia, Italy</figcaption>
+            </figure>
+
+            <!-- Photo 5 (iframe) -->
+            <figure class="artwork iframe-box">
+                <iframe src="images/photo5.jpg" title="Temple" class="art-iframe"></iframe>
+                <figcaption>Villa Borghese, Rome, Italy</figcaption>
+            </figure>
+
+        </div>
+
+        <!--Z-index stack inline-block-->
+        <div class="z-stack-inline">
+            <figure class="z-box z-n1">
+                <img src="images/photo6.jpg" alt="bicycle" class="art-img">
+                <figcaption>Åland, Finland</figcaption>
+            </figure>
+            <figure class="z-box z0">
+                <img src="images/photo7.jpg" alt="Castle" class="art-img">
+                <figcaption>Hämeenlinna, Finland</figcaption>
+            </figure>
+            <figure class="z-box z1">
+                <img src="images/photo8.jpg" alt="moon" class="art-img">
+                <figcaption>Jyväskylä, Finland</figcaption>
+            </figure>
+            <figure class="z-box z2">
+                <img src="images/photo9.jpg" alt="beach" class="art-img">
+                <figcaption>Porto Torres, Sardinia, Italy</figcaption>
+            </figure>
+            <figure class="z-box z3">
+                <img src="images/photo10.jpg" alt="landscape" class="art-img">
+                <figcaption>Masua, Sardinia, Italy</figcaption>
+            </figure>
+        </div>
+
+        <!-- Hidden Photo11-->
+        <figure class="artwork hidden-photo">
+            <img src="images/photo11.jpg" alt="sunset2" class="art-img">
+            <figcaption>Nebida, Sardinia</figcaption>
+        </figure>
+
+        <!-- Floating box -->
+         <div class="floating-box">
+            <p><strong>I hope you liked my photo gallery!</strong><br>I'd love to know your favourite </p>
+         </div>
+         <div class="clear-box">
+            <p>See you soon with more pictures</p>
+         </div>
+    </main>
+
+    <footer class="fixed-footer">
+        <p>Photo Gallery: Enjoy the beauty around</p>
+    </footer>
+</body>
+</html>
